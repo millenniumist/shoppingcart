@@ -1,0 +1,307 @@
+* {
+    box-sizing: border-box;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+hr {
+    border: 2px solid rgba(128, 128, 128, 0.15);
+}
+
+.dx {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dy {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.am {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.ac {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nav-url {
+    color: black;
+    font-weight: 800;
+    font-size: large;
+    text-decoration: none;
+}
+
+
+.header-wrapper  {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 120px;
+    margin: 8px 0 52px 0;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.15);;
+    padding-bottom: 12px;
+}
+
+.app-wrapper, .cart-wrapper {
+    display: flex;
+    align-items: center;
+
+
+}
+
+.app-wrapper *, .cart-wrapper * {
+    padding: 12px;
+
+}
+
+.login {
+    border-right: 1px solid rgba(128, 128, 128, 0.15);;
+}
+
+.cart {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.quantity {
+    position: absolute;
+    padding: 0;
+    top: 4px;
+    right: 8px;
+    font-size: 10px;
+    color: white;
+    background-color: red;
+    width: 12px;
+    height: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+
+
+
+ 
+/* Main article part */
+
+.main-article {
+    padding: 0 120px;
+
+}
+
+.my-cart {
+    font-size: 36px;
+    margin: 12px;
+}
+
+.content-wrapper{
+    display: flex;
+    
+}
+
+.container-col1 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.container-block {
+    display: flex;
+    background-color: white;
+    border-radius: 20px;
+    margin: 1rem;
+    padding: 2rem 1rem;
+    justify-content: space-around;
+   
+}
+
+.product > * {
+    margin: 8px 0;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    width: 12em;
+    height: 12em;
+    padding: 1rem;
+    background: rgb(89,154,237);
+    background: linear-gradient(0deg, rgba(89,154,237,1) 0%, rgba(126,186,248,1) 100%);
+    color: white;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+
+.logo-wrapper {
+    width: 36px;
+    height: 36px;
+    background-color: white;
+    border-radius: 12px;
+}
+
+.g-image {
+    width: 16px;
+
+
+}
+
+.level {
+    background-color: gray;
+    padding: 4px 20px;
+}
+
+.gradient-slide {
+    background: rgb(248,201,121);
+    background: linear-gradient(180deg, rgba(248,201,121,1) 0%, rgba(237,121,89,1) 100%);
+}
+
+/* 2nd col*/
+
+.container-col2 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    
+}
+
+.container-block2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 2px solid rgba(128, 128, 128, 0.15);
+    border-radius: 20px;
+    margin: 1rem;
+    padding: 30px 20px;
+    height: 23rem;
+    
+
+}
+
+
+
+.delete-button {
+    width: 48px;
+}
+
+
+.order-info {
+    padding-top: 16px;
+    font-size: 24px;
+    font-weight: 800;
+    align-self: start;
+}
+
+.subtotal-wrapper {
+    width: 100%;    
+
+}
+
+
+.subtotal {
+    display: flex;
+    align-items: baseline;
+}
+
+
+.promo {
+    align-items: center;
+    gap: 12px;
+
+}
+
+.payment {
+    width: 100%;
+}
+
+.final-amt-wrapper {
+}
+
+.total-payment {
+    font-weight: 600;
+}
+
+.final-amt {
+    color: #00c69e;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.container-col2 * {
+    margin-bottom: 18px;
+}
+
+.checkout-btn {
+    height: 32px;
+    border-radius: 10px;
+    background-color: #00d7ad;
+    font-weight: 800;
+}
+
+.checkout-btn:hover {
+    background-color: aquamarine;
+}
+
+.checkout-btn:active {
+    background-color: black;
+    color: white;
+}
+
+
+.coupon-input {
+    flex-grow: 1;
+    min-height: 32px;
+    background-color: transparent;
+    border: 2px solid rgb(173, 171, 171);
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.coupon-btn {
+    flex-basis: 100px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #00b893;
+    min-height: 32px;
+    background-color: transparent;
+    border: 3px solid #00b893;
+    border-radius: 12px
+    ;
+}
+
+.price {
+    font-size: 24px;
+    font-weight: 700;
+    color: rgb(142, 142, 142);
+}
+
+.num {
+    font-weight: 600;
+    color: rgb(71, 71, 71);
+}
+
